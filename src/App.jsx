@@ -154,12 +154,14 @@ import React, { useState } from "react";
 import Timer from "./components/Das5_Homework/Timer";
 import Card from "./components/Das5_Homework/Card";
 import Message from "./components/Das5_Homework/Message";
+import { DashBoard } from "./conteniers/DashBoard";
 
 const App = () => {
   const [showTimer, setShowTimer] = useState(true);
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center p-8">
-      <h1 className="text-3xl font-bold mb-6">
+      <DashBoard/>
+      {/* <h1 className="text-3xl font-bold mb-6">
         React Hooks & Composition Example
       </h1>
 
@@ -178,7 +180,7 @@ const App = () => {
         <Card>
           <Timer />
         </Card>
-      )}
+      )} */}
     </div>
   );
 };
